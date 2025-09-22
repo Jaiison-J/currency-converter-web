@@ -20,8 +20,11 @@ A beautiful, responsive currency converter web application that works directly i
 currency-converter-web/
 │
 ├── index.html # Main HTML file
+
 ├── style.css # Styles and responsive design
+
 ├── script.js # JavaScript functionality
+
 └── README.md # Project documentation
 
 
