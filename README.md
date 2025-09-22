@@ -18,7 +18,9 @@ A beautiful, responsive currency converter web application that works directly i
 ## 📁 Project Structure
 
 currency-converter-web/
+
 │
+
 ├── index.html # Main HTML file
 
 ├── style.css # Styles and responsive design
