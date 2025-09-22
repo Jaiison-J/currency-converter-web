@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>💱 Currency Converter</h1>
+            <p>Convert between 150+ currencies in real-time</p>
+        </header>
+
+        <div class="converter-box">
+            <div class="input-group">
+                <label for="amount">Amount:</label>
+                <input type="number" id="amount" value="1" min="0" step="0.01">
+            </div>
+
+            <div class="currency-selectors">
+                <div class="from-currency">
+                    <label for="from">From:</label>
+                    <select id="from">
+                        <option value="USD">USD - US Dollar</option>
+                        <option value="EUR">EUR - Euro</option>
+                        <option value="GBP">GBP - British Pound</option>
+                        <option value="JPY">JPY - Japanese Yen</option>
+                        <option value="INR">INR - Indian Rupee</option>
+                        <option value="CAD">CAD - Canadian Dollar</option>
+                        <option value="AUD">AUD - Australian Dollar</option>
+                    </select>
+                </div>
+
+                <button id="swap-btn" class="swap-btn">⇄</button>
+
+                <div class="to-currency">
+                    <label for="to">To:</label>
+                    <select id="to">
+                        <option value="EUR">EUR - Euro</option>
+                        <option value="USD">USD - US Dollar</option>
+                        <option value="GBP">GBP - British Pound</option>
+                        <option value="JPY">JPY - Japanese Yen</option>
+                        <option value="INR">INR - Indian Rupee</option>
+                        <option value="CAD">CAD - Canadian Dollar</option>
+                        <option value="AUD">AUD - Australian Dollar</option>
+                    </select>
+                </div>
+            </div>
+
+            <button id="convert-btn" class="convert-btn">Convert</button>
+
+            <div id="result" class="result">
+                <div class="result-amount">1 USD = 0.85 EUR</div>
+                <div class="result-date">Last updated: --</div>
+            </div>
+
+            <div id="error" class="error-message"></div>
+        </div>
+
+        <div class="info-section">
+            <h3>Supported Currencies</h3>
+            <p>USD, EUR, GBP, JPY, INR, CAD, AUD, CHF, CNY, and 150+ more</p>
+            
+            <h3>How to Use</h3>
+            <ol>
+                <li>Enter the amount you want to convert</li>
+                <li>Select the source currency</li>
+                <li>Select the target currency</li>
+                <li>Click "Convert" or press Enter</li>
+                <li>Use the swap button (⇄) to reverse currencies</li>
+            </ol>
+        </div>
+    </div>
+
+    <footer>
+        <p>Powered by <a href="https://exchangerate-api.com" target="_blank">ExchangeRate-API</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
